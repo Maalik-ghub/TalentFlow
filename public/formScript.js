@@ -74,6 +74,7 @@ nav5.addEventListener("click", () => {
 })
 
 let touch = false;
+if(window.innerWidth < 780) {
 nav6.addEventListener("touchstart", () => {
     touch = true;
     v1absolute.style.transform = "scaleX(1)";
@@ -111,12 +112,12 @@ v1absolutenav6.addEventListener("click", () => {
     if(touch) return;
     document.location.href = "/contact";
 })
-
-nav6.addEventListener("click", () => {
-    if(touch) return;
-    document.location.href = "/contact";
-})
-
+} else {
+    nav6.addEventListener("click", () => {
+        if(touch) return;
+        document.location.href = "/contact";
+    })
+}
 
 let methodType;
 let url;

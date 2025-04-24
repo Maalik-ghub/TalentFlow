@@ -1237,7 +1237,8 @@ html, body {
     /**********************************************v2******************************************/
 
     .v2 {
-        height: 100vh;
+        min-height: 100vh;
+        height: auto;
         width: 100%;
         padding: 30px 20px;
         display: flex;

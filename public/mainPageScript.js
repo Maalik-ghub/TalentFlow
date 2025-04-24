@@ -124,48 +124,53 @@ nav5.addEventListener("click", () => {
 })
 
 let touch = false;
-nav6.addEventListener("touchstart", () => {
-    touch = true;
-    v1absolute.style.transform = "scaleX(1)";
-    setTimeout(() => {
-        touch = false;
-    }, 500);
-})
+if(window.innerWidth < 780) {
+    nav6.addEventListener("touchstart", () => {
+        touch = true;
+        v1absolute.style.transform = "scaleX(1)";
+        setTimeout(() => {
+            touch = false;
+        }, 500);
 
-v1absolutenav1.addEventListener("click", () => {
-    if(touch) return;
-    document.location.href = "/";
-})
+        v1absolutenav1.addEventListener("click", () => {
+            if(touch) return;
+            document.location.href = "/";
+        })
+        
+        v1absolutenav2.addEventListener("click", () => {
+            if(touch) return;
+            document.location.href = "/about";
+        })
+        
+        v1absolutenav3.addEventListener("click", () => {
+            if(touch) return;
+            document.location.href = "/care";
+        })
+        
+        v1absolutenav4.addEventListener("click", () => {
+            if(touch) return;
+            document.location.href = "/staffing";
+        })
+        
+        v1absolutenav5.addEventListener("click", () => {
+            if(touch) return;
+            document.location.href = "/business";
+        })
+        
+        v1absolutenav6.addEventListener("click", () => {
+            if(touch) return;
+            document.location.href = "/contact";
+        })
+    })
+} else {
+    nav6.addEventListener("click", () => {
+        if(touch) return;
+        document.location.href = "/contact";
+    })
+}
 
-v1absolutenav2.addEventListener("click", () => {
-    if(touch) return;
-    document.location.href = "/about";
-})
 
-v1absolutenav3.addEventListener("click", () => {
-    if(touch) return;
-    document.location.href = "/care";
-})
 
-v1absolutenav4.addEventListener("click", () => {
-    if(touch) return;
-    document.location.href = "/staffing";
-})
-
-v1absolutenav5.addEventListener("click", () => {
-    if(touch) return;
-    document.location.href = "/business";
-})
-
-v1absolutenav6.addEventListener("click", () => {
-    if(touch) return;
-    document.location.href = "/contact";
-})
-
-nav6.addEventListener("click", () => {
-    if(touch) return;
-    document.location.href = "/contact";
-})
 
 
 

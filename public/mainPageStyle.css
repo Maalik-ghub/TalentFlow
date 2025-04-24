@@ -1497,7 +1497,7 @@ html, body {
     font-family: "Outfit", sans-serif;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 780px) {
     .v1 {
         min-width: 100vw;
     }
@@ -1860,7 +1860,6 @@ html, body {
         z-index: 2;
         min-height: 130vh;
         height: auto;
-        max-height: auto;
         min-width: 100vw;
         background: url("images/banners/bannerimage5.jpg");
         background-position: center;
