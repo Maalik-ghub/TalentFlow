@@ -1,0 +1,1358 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.leaflet-layer,
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out,
+.leaflet-control-attribution {
+  filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+}
+
+.stylePopup .leaflet-popup-content-wrapper,
+.stylePopup .leaflet-popup-tip {
+    background-color: rgb(248, 207, 117);
+    padding: 8px;
+}
+
+button {
+    cursor: pointer;
+}
+
+html, body {
+    display: flex;
+    flex-flow: column;
+    height: auto;
+    width: 100%;
+    background: lightyellow;
+    z-index: -1;
+    overflow-x: hidden;
+}
+
+.v1 {
+    position: relative;
+    z-index: 2;
+    min-height: 450px;
+    max-height: 450px;
+    height: 100%;
+    width: 100%;
+    background-image: url("images/banners/specialist.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+}
+
+.v1-absolute {
+    position: fixed;
+    height: 0;
+    width: 0;
+    visibility: hidden;
+    transform: scale(0);
+    z-index: 100;
+}
+
+.v1-wrapper {
+    position: relative;
+    z-index: 2;
+    height: 450px;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/** Division One of Four **/
+
+.v1-v1 {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-bottom: 0.2px solid lightyellow;
+}
+
+.v1-v1-h1 {
+    height: 50px;
+    width: 65%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.v1-v1-h1-txt1 {
+    color: lightyellow;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    text-shadow: 1.5px 1.5px 1px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.v1-v1-h1-txt1-icon {
+    height: 30px;
+    width: 30px;
+    background: url("images/icons/location.png");
+    background-size: cover;
+    background-position: center;
+    margin-right: 5px;
+}
+
+.v1-v1-h1-txt2 {
+    color: lightyellow;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    text-shadow: 1.5px 1.5px 1px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.v1-v1-h1-txt2-icon {
+    height: 30px;
+    width: 30px;
+    background: url("images/icons/email.png");
+    background-size: cover;
+    background-position: center;
+    margin-right: 5px;
+}
+
+.v1-v1-h1-txt3 {
+    color: lightyellow;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-shadow: 1.5px 1.5px 2px black;
+    letter-spacing: 0.8px;
+    text-shadow: 1.5px 1.5px 1px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.v1-v1-h1-txt3-icon {
+    height: 30px;
+    width: 30px;
+    background: url("images/icons/phone.png");
+    background-size: cover;
+    background-position: center;
+    margin-right: 5px;
+}
+
+.v1-v1-h2 {
+    height: 50px;
+    width: 20%;
+    display: flex;
+    flex-flow: row nowrap;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.v1-v1-h2-btn1 {
+    min-height: 25px;
+    min-width: 25px;
+    background: url("images/icons/facebook.png");
+    background-size: cover;
+    background-position: center;
+    border: 0;
+    outline: 0;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.v1-v1-h2-btn2 {
+    min-height: 25px;
+    min-width: 25px;
+    background: url("images/icons/x.png");
+    background-size: cover;
+    background-position: center;
+    border: 0;
+    outline: 0;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.v1-v1-h2-btn3 {
+    min-height: 25px;
+    min-width: 25px;
+    background: url("images/icons/instagram.png");
+    background-size: cover;
+    background-position: center;
+    border: 0;
+    outline: 0;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/** Division Two of Four **/
+
+.v1-v2 {
+    height: 100px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-flow: row;
+}
+
+.v1-v2-h1 {
+    height: 100%;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.v1-v2-h1-banner {
+    height: 100%;
+    width: 300px;
+    background-image: url("images/logo.png");
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    outline: 0;
+    border: 0;
+}
+
+.v1-v2-h2 {
+    height: 100%;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.v1-v2-h2-nav1 {
+    height: 20px;
+    width: auto;
+    font-family: "Outfit", sans-serif;
+    font-size: 14px;
+    outline: 0;
+    border: 0;
+    background: 0;
+    color: rgb(248, 207, 117);
+    cursor: pointer;
+}
+
+.v1-v2-h2-nav2 {
+    height: 20px;
+    width: auto;
+    font-family: "Outfit", sans-serif;
+    font-size: 14px;
+    outline: 0;
+    border: 0;
+    background: 0;
+    color: rgb(248, 207, 117);
+    cursor: pointer;
+}
+
+.v1-v2-h2-nav3 {
+    height: 20px;
+    width: auto;
+    font-family: "Outfit", sans-serif;
+    font-size: 14px;
+    outline: 0;
+    border: 0;
+    background: 0;
+    color: rgb(248, 207, 117);
+    cursor: pointer;
+}
+
+.v1-v2-h2-nav4 {
+    height: 20px;
+    width: auto;
+    font-family: "Outfit", sans-serif;
+    font-size: 14px;
+    outline: 0;
+    border: 0;
+    background: 0;
+    color: rgb(248, 207, 117);
+    cursor: pointer;
+}
+
+.v1-v2-h2-nav5 {
+    height: 20px;
+    width: auto;
+    font-family: "Outfit", sans-serif;
+    font-size: 14px;
+    outline: 0;
+    border: 0;
+    background: 0;
+    color: rgb(248, 207, 117);
+    cursor: pointer;
+}
+
+.v1-v2-h2-nav6 {
+    height: 20px;
+    width: auto;
+    font-family: "Outfit", sans-serif;
+    font-size: 14px;
+    outline: 0;
+    border: 0;
+    background: 0;
+    color: rgb(248, 207, 117);
+    cursor: pointer;
+}
+
+/** Division Three of Four **/
+
+.v1-v3 {
+    height: calc(100% - 150px);
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.v1-v3-h1 {
+    height: 100%;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.v1-v3-h1-btn1 {
+    height: 100px;
+    width: 50px;
+    outline: 0;
+    border: 0;
+    background: url("images/icons/chevronL.png");
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.v1-v3-h2 {
+    height: 100%;
+    width: 100%;
+}
+
+.v1-v3-h2-v1 {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.v1-v3-h2-v1-txt1 {
+    color: lightyellow;
+    font-family: "Outfit", sans-serif;
+    font-size: 70px;
+    font-weight: 600;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.v1-v3-h2-v2 {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.v1-v3-h2-v2-txt1 {
+    color: lightyellow;
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    width: 600px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.v1-v3-h2-v2-btn1 {
+    background: lightyellow;
+    border: 1px solid #1c1c1c;
+    outline: 0;
+    font-family: "Outfit", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    height: 40px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.v1-v3-h2-v3 {
+    height: 10%;
+    width: 100%;
+}
+
+.v1-v3-h3 {
+    height: 100%;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.v1-v3-h3-btn1 {
+    height: 100px;
+    width: 50px;
+    outline: 0;
+    border: 0;
+    background: url("images/icons/chevronR.png");
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/**********************************************************************/
+
+/*********V2******************************/
+
+.v2 {
+   height: 100vh;
+   width: 100%;
+   display: flex;
+   flex-flow: row;
+   padding: 50px 100px 50px 100px;
+   background: #1c1c1c;
+}
+
+.v2-h1 {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+}
+
+.v2-h1-txt1 {
+    font-size: 45px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    color: rgb(248, 207, 117);
+    margin-bottom: 30px;
+}
+
+.v2-h1-v1 {
+    height: 5px;
+    width: 150px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.v2-h1-v1-style1 {
+    height: 100%;
+    width: 45px;
+    background: rgb(248, 207, 117);
+}
+
+.v2-h1-v1-style2 {
+    height: 100%;
+    width: 95px;
+    background: rgb(248, 207, 117);
+}
+
+.v2-h1-inp1 {
+    height: 45px;
+    width: 100%;
+    font-family: "Outfit", sans-serif;
+    padding: 10px;
+    background: 0;
+    outline: 0;
+    border: 2px solid rgb(248, 207, 117);
+    color: rgb(248, 207, 117);
+    margin-bottom: 20px;
+}
+
+.v2-h1-inp1::placeholder {
+    color: rgb(248, 207, 117);
+    font-family: "Outfit", sans-serif;
+}
+
+.v2-h1-inp2 {
+    height: 45px;
+    width: 100%;
+    font-family: "Outfit", sans-serif;
+    padding: 10px;
+    background: 0;
+    outline: 0;
+    border: 2px solid rgb(248, 207, 117);
+    color: rgb(248, 207, 117);
+    margin-bottom: 20px;
+}
+
+.v2-h1-inp2::placeholder {
+    color: rgb(248, 207, 117);
+    font-family: "Outfit", sans-serif;
+}
+
+.v2-h1-inp3 {
+    height: 45px;
+    width: 100%;
+    font-family: "Outfit", sans-serif;
+    padding: 10px;
+    background: 0;
+    outline: 0;
+    border: 2px solid rgb(248, 207, 117);
+    color: rgb(248, 207, 117);
+    margin-bottom: 20px;
+}
+
+.v2-h1-inp3::placeholder {
+    color: rgb(248, 207, 117);
+    font-family: "Outfit", sans-serif;
+}
+
+.v2-h1-inp4 {
+    height: 45px;
+    width: 100%;
+    font-family: "Outfit", sans-serif;
+    padding: 10px;
+    background: 0;
+    outline: 0;
+    border: 2px solid rgb(248, 207, 117);
+    color: rgb(248, 207, 117);
+    margin-bottom: 20px;
+}
+
+.v2-h1-inp4::placeholder {
+    color: rgb(248, 207, 117);
+    font-family: "Outfit", sans-serif;
+}
+
+.v2-h1-btn1 {
+    height: 55px;
+    width: 100%;
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+    background: rgb(248, 207, 117);
+    outline: 0;
+    color: #1c1c1c;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.v2-h2 {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    padding: 0 50px 0 50px;
+}
+
+.v2-h2-txt1 {
+    font-size: 45px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    color: rgb(248, 207, 117);
+    margin-bottom: 30px;
+}
+
+.v2-h2-v1 {
+    height: 5px;
+    width: 150px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.v2-h2-v1-style1 {
+    height: 100%;
+    width: 45px;
+    background: rgb(248, 207, 117);
+}
+
+.v2-h2-v1-style2 {
+    height: 100%;
+    width: 95px;
+    background: rgb(248, 207, 117);
+}
+
+.v2-h2-v2 {
+    color: rgb(248, 207, 117);
+    font-size: 15px;
+    font-family: "Outfit", sans-serif;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.v2-h2-v2-icon1 {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background: url("images/icons/location.png");
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+}
+
+.v2-h2-v3 {
+    color: rgb(248, 207, 117);
+    font-size: 15px;
+    font-family: "Outfit", sans-serif;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.v2-h2-v3-icon1 {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background: url("images/icons/phone.png");
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+}
+
+.v2-h2-v4 {
+    color: rgb(248, 207, 117);
+    font-size: 15px;
+    font-family: "Outfit", sans-serif;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.v2-h2-v4-icon1 {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background: url("images/icons/mobile.png");
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+}
+
+.v2-h2-v5 {
+    color: rgb(248, 207, 117);
+    font-size: 15px;
+    font-family: "Outfit", sans-serif;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.v2-h2-v5-icon1 {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background: url("images/icons/email.png");
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+}
+
+/**********************************************************************/
+
+/*********V3******************************/
+
+.v3 {
+    height: 100vh;
+    width: 100%;
+}
+
+/**********************************************************************/
+
+/*********V4******************************/
+
+
+.v4 {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    z-index: 2;
+    background: url("images/banners/bannerimage10.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.v4-wrapper {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.v4-v1 {
+    height: 85%;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.v4-v1-h1 {
+    height: 100%;
+    width: 33.33%;
+}
+
+.v4-v1-h1-v1 {
+    height: 40%;
+    width: 100%;
+    font-size: 25px;
+    color: rgb(248, 207, 117);
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.v4-v1-h1-v2 {
+    height: 10%;
+    width: 100%;
+    font-size: 15px;
+    color: lightyellow;
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.v4-v1-h1-v3 {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.v4-v1-h1-v3-txt1 {
+    color: lightyellow;
+    font-family: "Outfit", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    text-shadow: 1.5px 1.5px 1px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.v4-v1-h1-v3-txt1-icon {
+    height: 30px;
+    width: 30px;
+    background: url("images/icons/location.png");
+    background-size: cover;
+    background-position: center;
+    margin-right: 5px;
+}
+
+.v4-v1-h1-v3-txt2 {
+    color: lightyellow;
+    font-family: "Outfit", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    text-shadow: 1.5px 1.5px 1px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.v4-v1-h1-v3-txt2-icon {
+    height: 30px;
+    width: 30px;
+    background: url("images/icons/phone.png");
+    background-size: cover;
+    background-position: center;
+    margin-right: 5px;
+}
+
+.v4-v1-h1-v3-txt3 {
+    color: lightyellow;
+    font-family: "Outfit", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-shadow: 1.5px 1.5px 2px black;
+    letter-spacing: 0.8px;
+    text-shadow: 1.5px 1.5px 1px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.v4-v1-h1-v3-txt3-icon {
+    height: 30px;
+    width: 30px;
+    background: url("images/icons/mobile.png");
+    background-size: cover;
+    background-position: center;
+    margin-right: 5px;
+}
+
+.v4-v1-h1-v3-txt4 {
+    color: lightyellow;
+    font-family: "Outfit", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-shadow: 1.5px 1.5px 2px black;
+    letter-spacing: 0.8px;
+    text-shadow: 1.5px 1.5px 1px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.v4-v1-h1-v3-txt4-icon {
+    height: 30px;
+    width: 30px;
+    background: url("images/icons/email.png");
+    background-size: cover;
+    background-position: center;
+    margin-right: 5px;
+}
+
+.v4-v1-h2 {
+    height: 100%;
+    width: 33.33%;
+}
+
+.v4-v1-h2-v1 {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.v4-v1-h2-v1-img1 {
+    height: 95%;
+    width: 95%;
+    background: url("images/logo.png");
+    background-size: contain;
+    background-position: center;
+    border-radius: 7px;
+}
+
+.v4-v1-h2-v2 {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.v4-v1-h2-v2 button {
+    outline: 0;
+    background: 0;
+    border: 0;
+    font-size: 13px;
+    font-family: "Outfit", sans-serif;
+    color: rgb(248, 207, 117);
+    border-left: 1px solid lightyellow;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.v4-v1-h2-v3 {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.v4-v1-h2-v3 button {
+    outline: 0;
+    border: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    font-size: 13px;
+    font-family: "Outfit", sans-serif;
+    color: rgb(157, 213, 255);
+    padding-left: 4px;
+    margin: 5px;
+}
+
+.v4-v1-h2-v3-btn1 {
+    background: url("images/icons/facebook.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.v4-v1-h2-v3-btn2 {
+    background: url("images/icons/x.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.v4-v1-h2-v3-btn3 {
+    background: url("images/icons/instagram.png");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.v4-v1-h3 {
+    height: 100%;
+    width: 33.33%;
+    padding: 0 0px 0 30px;
+}
+
+.v4-v1-h3-v1 {
+    height: 40%;
+    width: 100%;
+    font-size: 25px;
+    color: rgb(248, 207, 117);
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.v4-v1-h3-v2 {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.v4-v1-h3-v2-inp1 {
+    height: 50px;
+    width: 80%;
+    outline: 0;
+    background: lightyellow;
+    border: 0;
+    border-radius: 2px;
+    font-family: "Outfit", sans-serif;
+    font-size: 15px;
+    padding: 5px 10px 5px 10px;
+    color: #1c1c1c;
+}
+
+.v4-v1-h3-v3 {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.v4-v1-h3-v3-btn1 {
+    height: 50px;
+    width: 80px;
+    outline: 0;
+    border: 2px solid rgb(248, 207, 117);
+    color: rgb(248, 207, 117);
+    font-family: "Outfit", sans-serif;
+    font-size: 15px;
+    padding: 5px 10px 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: 0;
+}
+
+.v4-v2 {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: lightyellow;
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+}
+
+@media (max-width: 720px) {
+    .v1 {
+        min-width: 100vw;
+    }
+
+    .v1-absolute {
+        position: fixed;
+        padding: 40px 30px;
+        height: 100vh;
+        width: 100vw;
+        background: #1c1c1c;
+        visibility: visible;
+        transform-origin: right;
+        transform: scaleX(0);
+        z-index: 100;
+        transition: transform 0.5s ease;
+    }
+
+    .v1-absolute div {
+        margin-bottom: 15px;
+        font-size: 15px;
+        color: rgb(248, 207, 117);
+        font-family: "Outfit", sans-serif;
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgb(248, 207, 117);
+    }
+
+    .v1-v1-h1-txt1 {
+        color: lightyellow;
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 0.5px;
+        text-shadow: 1.5px 1.5px 1px black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-height: 0;
+        max-width: 0;
+        transform: scale(0);
+    }
+    
+    .v1-v1-h1-txt2 {
+        color: lightyellow;
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 0.5px;
+        text-shadow: 1.5px 1.5px 1px black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-height: 0;
+        max-width: 0;
+        transform: scale(0);
+    }
+
+    .v1-v2-h2-nav1 {
+        height: 20px;
+        width: auto;
+        font-family: "Outfit", sans-serif;
+        font-size: 14px;
+        outline: 0;
+        border: 0;
+        background: 0;
+        color: rgb(248, 207, 117);
+        cursor: pointer;
+        max-height: 0;
+        max-width: 0;
+        transform: scale(0);
+    }
+    
+    .v1-v2-h2-nav2 {
+        height: 20px;
+        width: auto;
+        font-family: "Outfit", sans-serif;
+        font-size: 14px;
+        outline: 0;
+        border: 0;
+        background: 0;
+        color: rgb(248, 207, 117);
+        cursor: pointer;
+        max-height: 0;
+        max-width: 0;
+        transform: scale(0);
+    }
+    
+    .v1-v2-h2-nav3 {
+        height: 20px;
+        width: auto;
+        font-family: "Outfit", sans-serif;
+        font-size: 14px;
+        outline: 0;
+        border: 0;
+        background: 0;
+        color: rgb(248, 207, 117);
+        cursor: pointer;
+        max-height: 0;
+        max-width: 0;
+        transform: scale(0);
+    }
+    
+    .v1-v2-h2-nav4 {
+        height: 20px;
+        width: auto;
+        font-family: "Outfit", sans-serif;
+        font-size: 14px;
+        outline: 0;
+        border: 0;
+        background: 0;
+        color: rgb(248, 207, 117);
+        cursor: pointer;
+        max-height: 0;
+        max-width: 0;
+        transform: scale(0);
+    }
+    
+    .v1-v2-h2-nav5 {
+        height: 20px;
+        width: auto;
+        font-family: "Outfit", sans-serif;
+        font-size: 14px;
+        outline: 0;
+        border: 0;
+        background: 0;
+        color: rgb(248, 207, 117);
+        cursor: pointer;
+        max-height: 0;
+        max-width: 0;
+        transform: scale(0);
+    }
+    
+    .v1-v2-h2-nav6 {
+        height: 20px;
+        width: 20px;
+        font-family: "Outfit", sans-serif;
+        font-size: 14px;
+        outline: 0;
+        border: 0;
+        background: 0;
+        color: transparent;
+        cursor: pointer;
+        background: url("images/icons/burger-menu.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .v1-v3-h1-btn1 {
+        max-height: 0;
+        max-width: 0;
+        transform: scale(0);
+        outline: 0;
+        border: 0;
+        background: url("images/icons/chevronL.png");
+        background-size: 70px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    .v1-v3-h2 {
+        height: 100%;
+        width: 100%;
+    }
+
+    .v1-v3-h2-v1-txt1 {
+        color: lightyellow;
+        font-family: "Outfit", sans-serif;
+        width: 100%;
+        font-size: 37px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+        transition: opacity 1s ease;
+    }
+
+    .v1-v3-h3-btn1 {
+        max-height: 0;
+        max-width: 0;
+        transform: scale(0);
+        outline: 0;
+        border: 0;
+        background: url("images/icons/chevronR.png");
+        background-size: 70px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    .v1-v3-h2-v2-txt1 {
+        color: lightyellow;
+        font-family: "Outfit", sans-serif;
+        max-width: 80%;
+        font-size: 13px;
+        font-weight: 300;
+        width: 600px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        word-wrap: break-word;
+        margin-top: 20px;
+        opacity: 1;
+        transition: opacity 1s ease;
+    }
+
+    .v1-v3-h2-v2-btn1 {
+        background: lightyellow;
+        border: 1px solid #1c1c1c;
+        outline: 0;
+        font-family: "Outfit", sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        height: 30px;
+        width: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 35px;
+        cursor: pointer;
+    }
+
+    .v2 {
+        min-height: 100vh;
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        padding: 50px 0px 50px 0px;
+        background: #1c1c1c;
+        align-items: center;
+     }
+
+    .v2-h1 {
+        height: 100%;
+        width: 90%;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .v2-h1-txt1 {
+        font-size: 30px;
+        font-family: "Outfit", sans-serif;
+        font-weight: 600;
+        color: rgb(248, 207, 117);
+        margin-bottom: 30px;
+    }
+
+    .v2-h1-v1 {
+        height: 3px;
+        width: 80px;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+    
+    .v2-h1-v1-style1 {
+        height: 100%;
+        width: 25px;
+        background: rgb(248, 207, 117);
+    }
+    
+    .v2-h1-v1-style2 {
+        height: 100%;
+        width: 50px;
+        background: rgb(248, 207, 117);
+    }
+
+    .v2-h2 {
+        height: 100%;
+        width: 90%;
+        display: flex;
+        flex-flow: column;
+        padding: 0;
+    }
+
+    .v2-h2-txt1 {
+        font-size: 30px;
+        font-family: "Outfit", sans-serif;
+        font-weight: 600;
+        color: rgb(248, 207, 117);
+        margin-bottom: 30px;
+    }
+
+    .v2-h2-v1 {
+        height: 3px;
+        width: 80px;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+    
+    .v2-h2-v1-style1 {
+        height: 100%;
+        width: 25px;
+        background: rgb(248, 207, 117);
+    }
+    
+    .v2-h2-v1-style2 {
+        height: 100%;
+        width: 50px;
+        background: rgb(248, 207, 117);
+    }
+
+    .v4-v1 {
+        height: 85%;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+    }
+
+    .v4-v1-h1 {
+        height: 0;
+        width: 0;
+        transform: scale(0);
+    }
+
+    .v4-v1-h2 {
+        height: 100%;
+        width: 100%;
+    }
+
+    .v4-v1-h2-v2 {
+        height: 20%;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .v4-v1-h2-v3 {
+        height: 0;
+        width: 0;
+        transform: scale(0);
+    }
+
+    .v4-v1-h3 {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+    }
+
+    .v4-v1-h3-v2-inp1 {
+        height: 50px;
+        width: 100%;
+        outline: 0;
+        background: lightyellow;
+        border: 0;
+        border-radius: 2px;
+        font-family: "Outfit", sans-serif;
+        font-size: 15px;
+        padding: 5px 10px 5px 10px;
+        color: #1c1c1c;
+        margin-bottom: 10px;
+    }
+
+    .v4-v2 {
+        height: 15%;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        color: lightyellow;
+        font-size: 12px;
+        font-family: "Outfit", sans-serif;
+        text-align: center;
+    }
+}
