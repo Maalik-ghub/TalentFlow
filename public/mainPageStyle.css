@@ -1859,7 +1859,8 @@ html, body {
         position: relative;
         z-index: 2;
         min-height: 130vh;
-        max-height: 130vh;
+        height: auto;
+        max-height: auto;
         min-width: 100vw;
         background: url("images/banners/bannerimage5.jpg");
         background-position: center;
@@ -1871,7 +1872,7 @@ html, body {
     }
 
     .v3-h1 {
-        min-height: 50vh;
+        min-height: auto;
         width: 95%;
         background-color: rgba(0, 0, 0, 0.6);
         border-radius: 4px;
