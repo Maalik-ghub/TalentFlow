@@ -849,6 +849,7 @@ html, body {
     width: 95%;
     background: url("images/logo.png");
     background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
     border-radius: 7px;
 }
