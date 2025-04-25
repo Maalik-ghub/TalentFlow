@@ -30,7 +30,7 @@ app.post("/callme", (req, res) => {
     res.status(200).send(number);
     transporter.sendMail({
         from: '"Call Back" <callback@talentflowltd.co.uk>', // sender address
-        to: "nabeellatheef9@gmail.com", // list of receivers
+        to: "info@talentflowltd.co.uk", // list of receivers
         subject: "Call Back Request", // Subject line
         text: `Number: ${number}`, // plain text body
     })
@@ -47,8 +47,8 @@ app.post("/applyform", (req, res) => {
     const { notesData } = req.body;
     res.status(200).send(nameData);
     transporter.sendMail({
-        from: '"Job Application" <callback@talentflowltd.co.uk>', // sender address
-        to: "nabeellatheef9@gmail.com", // list of receivers
+        from: '"Job Application" <jobapplication@talentflowltd.co.uk>', // sender address
+        to: "info@talentflowltd.co.uk", // list of receivers
         subject: `Job Application`, // Subject line
         html: `<p>Name: ${nameData}</p><br><p>Mobile: ${mobileData}</p><br><p>Email: ${emailData}</p><br><p>Location: ${locationData}</p><br><p>Profession: ${professionData}</p><br><p>Experience: ${experienceData}</p><br><p>CV: ${cvURLData}</p><br><p>Note: ${notesData}</p>` // plain text body
     })
@@ -63,8 +63,8 @@ app.post("/businessmail", (req, res) => {
     const { notesData } = req.body;
     res.status(200).send(nameData);
     transporter.sendMail({
-        from: '"Enquiry" <callback@talentflowltd.co.uk>', // sender address
-        to: "nabeellatheef9@gmail.com", // list of receivers
+        from: '"Business Enquiry" <enquiry@talentflowltd.co.uk>', // sender address
+        to: "info@talentflowltd.co.uk", // list of receivers
         subject: `Business Enquiry - ${serviceData}`, // Subject line
         html: `<p>Name: ${nameData}</p><br><p>Mobile: ${mobileData}</p><br><p>Email: ${emailData}</p><br><p>Location: ${locationData}</p><br><p>Note: ${notesData}</p>` // plain text body
     })
@@ -77,8 +77,8 @@ app.post("/contact", (req, res) => {
     const { notesData } = req.body;
     res.status(200).send(nameData);
     transporter.sendMail({
-        from: '"Contact" <callback@talentflowltd.co.uk>', // sender address
-        to: "nabeellatheef9@gmail.com", // list of receivers
+        from: '"Contact" <contact@talentflowltd.co.uk>', // sender address
+        to: "info@talentflowltd.co.uk", // list of receivers
         subject: `${subjectData}`, // Subject line
         html: `<p>Name: ${nameData}</p><br><p>Email: ${emailData}</p><br><p>Note: ${notesData}</p>` // plain text body
     })

@@ -1726,8 +1726,7 @@ html, body {
     .v2 {
         position: relative;
         z-index: 2;
-        min-height: 120vh;
-        max-height: 120vh;
+        min-height: auto;
         min-width: 100vw;
         background: #1c1c1c;
         display: flex;
@@ -1736,7 +1735,7 @@ html, body {
     }
 
     .v2-h1 {
-        min-height: 60vh;
+        min-height: auto;
         width: 100%;
         display: flex;
         flex-flow: column;
@@ -1749,6 +1748,28 @@ html, body {
         height: 30px;
         font-size: 30px;
         color: lightyellow;
+        margin-bottom: 10px;
+    }
+
+    .v2-h1-v1 {
+        height: 5px;
+        width: 130px;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    
+    .v2-h1-v1-style1 {
+        height: 100%;
+        width: 40px;
+        background-color: rgb(248, 207, 117);
+    }
+    
+    .v2-h1-v1-style2 {
+        height: 100%;
+        width: 80px;
+        background-color: lightyellow;
     }
 
     .v2-h1-v2 {
@@ -1858,7 +1879,7 @@ html, body {
     .v3 {
         position: relative;
         z-index: 2;
-        min-height: 130vh;
+        min-height: 1000px;
         height: auto;
         min-width: 100vw;
         background: url("images/banners/bannerimage5.jpg");
@@ -1871,7 +1892,7 @@ html, body {
     }
 
     .v3-h1 {
-        min-height: auto;
+        min-height: 400px;
         width: 95%;
         background-color: rgba(0, 0, 0, 0.6);
         border-radius: 4px;
@@ -1920,7 +1941,7 @@ html, body {
     }
     
     .v3-h2 {
-        min-height: auto;
+        min-height: 300px;
         width: 95%;
         background-color: rgba(0, 0, 0, 0.6);
         border-radius: 4px;
