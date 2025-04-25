@@ -207,7 +207,7 @@ submitBut.addEventListener("click", () => {
 })
 
 v4v1h3v3btn1.addEventListener("click", () => {
-    if(isNaN(v4v1h3v2inp1.value) || v4v1h3v2inp1.value.length < 7 || v4v1h3v2inp1.value > 18) {
+    if(isNaN(v4v1h3v2inp1.value) || v4v1h3v2inp1.value.length < 7 || v4v1h3v2inp1.value.length > 18) {
         v4v1h3v2inp1.value = null;
         v4v1h3v2inp1.placeholder = "Unsent - Provide phone number";
     } else {

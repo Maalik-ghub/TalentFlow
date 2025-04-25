@@ -429,7 +429,7 @@ let methodType;
 let fetchSubject;
 
 v7v1h3v3btn1.addEventListener("click", () => {
-    if(isNaN(v7v1h3v2inp1.value) || v7v1h3v2inp1.value.length < 7 || v7v1h3v2inp1.value > 18) {
+    if(isNaN(v7v1h3v2inp1.value) || v7v1h3v2inp1.value.length < 7 || v7v1h3v2inp1.value.length > 18) {
         v7v1h3v2inp1.value = null;
         v7v1h3v2inp1.placeholder = "Unsent - Provide phone number";
     } else {

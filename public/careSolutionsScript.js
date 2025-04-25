@@ -160,7 +160,7 @@ v8v1h2v3btn3.addEventListener("click", () => {
 })
 
 v8v1h3v3btn1.addEventListener("click", () => {
-    if(isNaN(v8v1h3v2inp1.value) || v8v1h3v2inp1.value.length < 7 || v8v1h3v2inp1.value > 18) {
+    if(isNaN(v8v1h3v2inp1.value) || v8v1h3v2inp1.value.length < 7 || v8v1h3v2inp1.value.length > 18) {
         v8v1h3v2inp1.value = null;
         v8v1h3v2inp1.placeholder = "Unsent - Provide correct number";
     } else {

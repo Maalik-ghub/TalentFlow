@@ -168,7 +168,7 @@ v5v1h2v3btn3.addEventListener("click", () => {
 })
 
 v5v1h3v3btn1.addEventListener("click", () => {
-    if(isNaN(v5v1h3v2inp1.value) || v5v1h3v2inp1.value.length < 7 || v5v1h3v2inp1.value > 18) {
+    if(isNaN(v5v1h3v2inp1.value) || v5v1h3v2inp1.value.length < 7 || v5v1h3v2inp1.value.length > 18) {
         v5v1h3v2inp1.value = null;
         v5v1h3v2inp1.placeholder = "Unsent - Provide phone number";
     } else {
