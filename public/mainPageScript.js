@@ -74,32 +74,26 @@ const v7v1h3v2inp1 = document.querySelector(".v7-v1-h3-v2-inp1");
 const v7v1h3v2inp1ph = document.querySelector(".v7-v1-h3-v2-inp1::placeholder");
 const v7v1h3v3btn1 = document.querySelector(".v7-v1-h3-v3-btn1");
 
-let imgURL;
-function renderImage(imgURL) {
-    img = new Image()
-    img.src = imgURL;
-    resolvedURL = "url('"+imgURL+"')";
-    console.log(resolvedURL)
-    return  resolvedURL
-}
-
-
+image1 = new Image()
+image1.src = "/images/banners/qualitymed.jpg"
 let firstV1 = {
     "text": "Quality Medical Care Delivered",
     "sub": "We bring quality medical care into our patient's homes and aim to make primary healthcare more accessible.",
-    "image": renderImage('/images/banners/qualitymed.jpg')
+    "image": "url('/images/banners/qualitymed.jpg')"
 }
-
+image2 = new Image()
+image2.src = "/images/banners/heritage.jpg"
 let firstV2 = {
     "text": "A heritage in care, and reputation excellence Solutions",
     "sub": "Talentflow care solutions provide excellent services by prioritizing the safety and security of patients.",
-    "image": renderImage('/images/banners/heritage.jpg')
+    "image": "url('/images/banners/heritage.jpg')"
 }
-
+image3 = new Image()
+image3.src = "/images/banners/compassionate.jpg"
 let firstV3 = {
     "text": "Compassionate care for your loved one",
     "sub": "We are here to give you personalised information and advice to help you find and fund the care you deserve.",
-    "image": renderImage('/images/banners/compassionate.jpg')
+    "image": "url('/images/banners/compassionate.jpg')"
 }
 
 
