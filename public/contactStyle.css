@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+a {
+    color: lightyellow;
+}
+
 .leaflet-layer,
 .leaflet-control-zoom-in,
 .leaflet-control-zoom-out,
